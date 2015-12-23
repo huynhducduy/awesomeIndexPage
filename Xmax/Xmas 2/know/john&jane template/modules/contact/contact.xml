@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<contact>
+		<mail>yourmail@yourdomain.com</mail>
+		<postal><![CDATA[Postal address :<br>Concourse Level<br>767 5th Ave,<br>New York, NY 10153, USA<br>(212) 555-0000]]></postal>
+		<photo>pictures/map.swf</photo>
+
+		<glossary>
+			<nameMail>your name : </nameMail>
+			<addressMail>your e-mail : </addressMail>
+			<messageMail>your message : </messageMail>
+			<thanksMail>MESSAGE SENT, THANK YOU</thanksMail>
+			<serverErrorMail>SERVEUR ERROR, PLEASE TRY AGAIN LATER</serverErrorMail>
+			<sendButtonMail>SEND</sendButtonMail>
+		</glossary>
+</contact>
+

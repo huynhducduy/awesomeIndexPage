@@ -1,0 +1,102 @@
+<!-- 
+
+help at the bottom of this file.
+
+-->
+
+<?xml version="1.0" encoding="UTF-8"?>
+<teamList>
+	<team>
+		<photo>pictures/01.jpg</photo>
+		<name>Teammate 1</name>
+		<long><![CDATA[This is a long description of the teammate.<br>It supports HTML tags.There will be an automatic scrollbar if the text is becoming too long.<br><br>There are some buttons below to link to : <br>- a mailform,<br>- a website, <br>- a twitter account. ]]></long>
+		<mail form="true">contact@contact.com</mail>
+		<www>http://flashden.net/user/Tidamz</www>
+		<twitter>tidamz</twitter>
+
+	</team>		
+	<team>
+		<photo>pictures/02.jpg</photo>
+		<name>Teammate 2</name>
+		<long><![CDATA[If you leave one of the field empty, the icon will not be displayed.<br>Here, there's no twitter icon.<br><br><font color="#FF0000">There's an option to do not use a mailform with the mail button, but a direct link.</font>]]></long>
+		<mail form="false">contact@contact.com</mail>
+		<www>http://flashden.net/user/Tidamz</www>
+		<twitter></twitter>
+	</team>
+
+	<team>
+		<photo>pictures/01.jpg</photo>
+		<name>Teammate 3</name>
+		<long><![CDATA[Example 3.]]></long>
+		<mail form="false"></mail>
+		<www></www>
+		<twitter>tidamz</twitter>
+	</team>
+	<team>
+		<photo>pictures/02.jpg</photo>
+		<name>Teammate 4</name>
+		<long><![CDATA[Example 4.]]></long>
+		<mail form="false"></mail>
+		<www></www>
+		<twitter></twitter>
+	</team>
+</teamList>
+
+<!--
+photo : location of the teammate photo,Supported formats are jpg, png, gif and swf.
+The image must be 225px wide 225 px height 
+
+name : name of the teammate.
+
+long : long text to describe the teammate, html supported*.If the text is too long, a scrollball will appear.
+
+mail : mail address of the teammate.If the form attribute is set to true, the click on the letter will display a mail form,otherwise it will open a mail soft as Outlook,... 
+The form attribute accepts 2 values true or false. 
+NOTE : If the mail is blank, the letter will not appear. 
+
+www : url of the website of the teammate. 
+NOTE : If the www is blank, the button will not appear. 
+
+twitter : twitter account of the teammate.
+NOTE : If the twitter is blank, the "t" will not appear. 
+
+
+
+
+
+
+
+*Put some html in your texts :
+
+
+You can use html text with CDATA.
+
+How does it work ?
+
+<title><![CDATA[ your html text...]]></title>
+
+Instead of simply type your description, you have to add these tag when opening : <![CDATA[ and these tag when closing ]]>
+
+Between those two tags you can use html balises.
+
+Examples of HTML Tags :
+
+change the color of the text :
+
+<font color="#FF0000">your text</font>
+#FF0000 is the hexadecimal value for Red
+
+
+make a link :
+
+<a href="http://www.flashden.net" target="_blank">Your link text</a>
+
+
+jump a line : <br>
+
+underline text : <u>you underline text</u>
+
+
+
+
+-->

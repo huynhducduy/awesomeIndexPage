@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>		
+	<switcher enabled="true"/>	
+	<yeartype number="3"/><!-- 1, 2, 3 -->
+	<snow enabled="true" flake="assets/flakes/flake1.png" type="falling"/><!-- falling, 3D -->
+	<title1 color="#ffffff"><![CDATA[Merry Christmas and Happy New Year!]]></title1>
+	<title2 color="#c4c4c4"><![CDATA[<a href="http://fb.com/huynhducduy">From: Delete</a>]]></title2>
+	<sound enabled="true" link="assets/audio/Merry Christmas - Bette Midler.mp3"/>		
+	<fullscreen enabled="true"/>		
+	<slideshow duration="4000">
+		<image path="assets/images/video.mp4" type="FILL"/>
+	</slideshow>
+	<slideshow duration="4000">
+		<image path="assets/images/img1.jpg" type="FILL"/>
+		<image path="assets/images/img2.jpg" type="FILL"/>
+		<image path="assets/images/img3.jpg" type="FILL"/>
+		<image path="assets/images/img4.jpg" type="FILL"/>
+		<image path="assets/images/img5.jpg" type="FILL"/>
+		<image path="assets/images/img6.jpg" type="FILL"/>
+		<image path="assets/images/img7.jpg" type="FILL"/>
+		<image path="assets/images/img8.jpg" type="FILL"/>
+		<image path="assets/images/img9.jpg" type="FILL"/>
+		<image path="assets/images/img10.jpg" type="FILL"/>
+	</slideshow>	
+	<slideshow duration="4000">
+		<image path="assets/images/magic_winter_background.jpg" type="FILL"/>
+	</slideshow>
+</root>

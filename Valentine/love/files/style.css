@@ -1,0 +1,13 @@
+*{	padding:0; 	margin:0;}  
+body { font-size:12px; color:#000; line-height:16px; font-family:Arial; background:#000;}
+img{ border:0;}
+h1,h2,h3,h4,h5,h6{ font-size:100%;}
+
+a:focus{outline:none;}
+a{ color:#FFFFFF; text-decoration:none;}
+a:hover{ color:yellow;	text-decoration:none;}
+
+input, select, textarea,form{	margin:0px;	padding:0px;}
+input, select, textarea{ margin:0px; padding:0px;}
+
+.clear{ clear:both;}

@@ -1,0 +1,105 @@
+html {
+	background: #fff;
+	background-image: url(fogging.png), url(fogging7.png);
+	background-size: 100% 100%, auto;	
+	padding:0; margin:0;
+	height: 100%;
+}
+
+
+a:link,						/* unvisited link */
+a:visited {					/* visited link */
+	color: #FF3366;
+	text-decoration: none;
+}
+a:hover,					/* mouse over link */
+a:active {					/* selected link */
+	color: #f30;
+	text-decoration: none;
+}
+h1 {
+	font-family: 'Patrick Hand SC', cursive;	/* font name */
+	color: #FF3366;
+	font-size: 40px;
+	margin-left: auto;
+	margin-right: auto;
+	line-height: 100%;
+	font-weight: 100;	
+	text-align: left;
+	
+	//text-shadow:#000 8px 8px 20px;
+	
+	text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 50px #fff;
+	
+	margin: 0;
+	padding: 0;
+}
+h2 {
+	font-family: 'Patrick Hand SC', cursive;	/* font name */
+	color: #FF3366;
+	font-size: 35px;
+	margin-left: auto;
+	margin-right: auto;
+	line-height: 100%;
+	font-weight: 100;	
+	text-align: left;
+	
+	text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 50px #fff;
+	
+	margin: 0;
+	padding: 0;
+}
+h3 {
+	font-family: 'Patrick Hand SC', cursive;	/* font name */
+	color: #FF3366;
+	font-size: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	line-height: 100%;
+	font-weight: 100;	
+	text-align: left;
+	
+	text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 50px #fff;
+	
+	margin: 0;
+	padding: 0;
+}
+
+
+#greeting_text {
+	width: 500px;
+	height: auto;
+	position:absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: 30px;
+	margin-top: -180px;
+	z-index: 2;
+}
+#canvas {
+	position: absolute;	    
+	left: 0;
+	top: 0px;
+	z-index: 1;
+}
+#social_icons {
+	display:block;
+	position:absolute;
+	top: 100%;
+	margin-top: -50px;
+	//bottom: 10px;
+	z-index: 3;
+}
+#icon{
+	margin:4px;
+	background-position: top;
+	float: left;
+	overflow: hidden;
+}
+#bt_sound{
+	display:block;
+	position:absolute;
+	left: 100%;
+	margin-left: -40px;
+	z-index: 3;
+}

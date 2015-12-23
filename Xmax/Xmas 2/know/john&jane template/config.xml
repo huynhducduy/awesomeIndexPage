@@ -1,0 +1,104 @@
+<!-- 
+
+help at the bottom of this file.
+
+-->
+
+<?xml version="1.0" encoding="UTF-8"?>
+<template_config  bgColor="0x000000" handlerOpacity="100" textColor="0xFFFFFF" logoUrl="logo.png" defaultBg="modules/home/home_bg.jpg" bgMusic="false" startSound="false">
+<nameOfYourWebsite>john&jane's template</nameOfYourWebsite>
+	<rubs>
+		<rub>
+			<title>home</title>
+			<folder>modules/home/</folder>
+			<background>modules/home/home_bg.jpg</background>
+		</rub>
+		<rub>
+			<title>html text</title>
+			<folder>modules/text/</folder>
+			<background>modules/text/text_bg.jpg</background>
+		</rub>
+		<rub>
+			<title>news</title>
+			<folder>modules/news/</folder>
+			<background>modules/news/news_bg.jpg</background>
+		</rub>
+		<rub>
+			<title>team</title>
+			<folder>modules/team/</folder>
+			<background></background>
+		</rub>
+		<rub>
+			<title>mini slideshow</title>
+			<folder>modules/mini_slideshow/</folder>
+			<background>modules/mini_slideshow/mini_bg.jpg</background>
+		</rub>
+		<rub>
+			<title>multimedia gallery</title>
+			<folder>modules/multimedia_gallery/</folder>
+			<background>modules/multimedia_gallery/gallery_bg.jpg</background>
+		</rub>
+		<rub>
+			<title>your swf</title>
+			<folder>modules/swf/</folder>
+			<background>modules/swf/gallery_bg.jpg</background>
+		</rub>
+		<rub>
+			<title>links</title>
+			<folder>modules/links/</folder>
+			<background></background>
+		</rub>
+		<rub>
+			<title www="http://www.flashden.net">external link</title>
+			<folder></folder>
+			<background></background>
+		</rub>	
+		<rub>
+			<title>contact</title>
+			<folder>modules/contact/</folder>
+			<background>modules/contact/contact_bg.jpg</background>
+		</rub>
+	</rubs>
+	<bottom_menu>
+		<twitter>tidamz</twitter>
+		<rss>http://feeds.feedburner.com/Flashden-DownTheFoxhole</rss>
+	</bottom_menu>
+
+</template_config>
+
+
+<!--
+The first line :
+
+bgColor : primary color in hexadecimal (ex : 0x000000), this will the color of the background, and of the pannel.
+
+handlerOpacity : between 0 and 100, the opacity of the main handler background.
+
+textColor : secondary color in hexadecimal (ex : 0x000000), this will be the color of the texts, of the elements (arrows, lines,...).
+logoUrl : this is the location of picture used as logo.The supported formats are : jpg,png, gif and swf.
+defaultBg : this is the location of the default background.The supported formats are : jpg,png, gif.
+bgMusic : set on true if you want to play a music in the site.The file must be a mp3 file, placed on the same level than the 
+main.swf, and it must be named "music.mp3".The other value is false.
+startSound : set on true if you want the music automaticaly plays when entering the site.The other value is false.
+
+<nameOfYourWebsite></nameOfYourWebsite> : name of your website for the deeplinking.
+
+Adding a module :
+
+title : the name of your topic.
+folder : the location of the module used, IMPORTANT : be careful to end this by "/", the name of the swf comes after, and it will produce an error if you forget the "/". 
+backround : location of the image used as background for this topic,if you leave it empty, the default background will be used. 
+
+You can add as many topics you want, if there is too much topic, they will be automatically scrolled. 
+
+
+External link case : 
+
+In case you need to make a direct link to a location outside of the site, it's possible.
+
+
+Just add in the title node an attribute called www="http://www.your-link.com".
+
+You don't need to fill folder and background. 
+
+-->

@@ -1,0 +1,46 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+	<text>
+		<title><![CDATA[Html text, <font color="#006699">long</font> or <font color="#006699">short</font>]]></title>
+		<text><![CDATA[<font color="#999999">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</font> Nullam quis diam at odio hendrerit volutpat in consectetur erat. Duis non eros lacus. Integer ac semper est. Aliquam auctor sapien et neque accumsan iaculis. Aliquam semper molestie sodales. Proin mauris nibh, iaculis sit amet accumsan sed, ullamcorper eu quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla interdum adipiscing pretium. Praesent sit amet ante mi, nec consequat sapien. Sed eu justo interdum massa ultricies pulvinar at eu neque. Vestibulum ac eros dui. Nullam quis diam at odio hendrerit volutpat in consectetur erat. Duis non eros lacus.<br><br> Integer ac semper est. Aliquam auctor sapien et neque accumsan iaculis. Aliquam semper molestie sodales. Proin mauris nibh, iaculis sit amet accumsan sed, ullamcorper eu quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla interdum adipiscing pretium. Praesent sit amet ante mi, nec consequat sapien. Sed eu justo interdum massa ultricies pulvinar at eu neque. Vestibulum ac eros dui. Nullam quis diam at odio hendrerit volutpat in consectetur erat. Duis non eros lacus. Integer ac semper est. Aliquam auctor sapien et neque accumsan iaculis. Aliquam semper molestie sodales. Proin mauris nibh, iaculis sit amet accumsan sed, ullamcorper eu quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br><br> Nulla interdum adipiscing pretium. Praesent sit amet ante mi, nec consequat sapien. Sed eu justo interdum massa ultricies pulvinar at eu neque. Vestibulum ac eros dui. ]]></text>
+	</text>
+	
+<!--
+title : title of your homepage, html supported*.
+
+text : text of your homepage, html supported*.If the text is too long, a scrollball will appear.
+
+
+
+
+*Put some html in your texts :
+
+
+You can use html text with CDATA.
+
+How does it work ?
+
+<title><![CDATA[ your html text...]]></title>
+
+Instead of simply type your description, you have to add these tag when opening : <![CDATA[ and these tag when closing ]]>
+
+Between those two tags you can use html balises.
+
+Examples of HTML Tags :
+
+change the color of the text :
+
+<font color="#FF0000">your text</font>
+#FF0000 is the hexadecimal value for Red
+
+
+make a link :
+
+<a href="http://www.flashden.net" target="_blank">Your link text</a>
+
+
+jump a line : <br>
+
+underline text : <u>you underline text</u>
+	-->

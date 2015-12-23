@@ -1,0 +1,76 @@
+<!-- 
+
+help at the bottom of this file.
+
+-->
+
+<?xml version="1.0" encoding="UTF-8"?>
+<mediasList autoPlay="false" timer="3">
+	<media>
+		<image>pictures/01.jpg</image>
+		<desc><![CDATA[Image one !]]></desc>
+	</media>
+	<media>
+		<image>pictures/anim.swf</image>
+		<desc><![CDATA[Flash file !]]></desc>
+	</media>
+	<media>
+		<image>pictures/02.jpg</image>
+		<desc><![CDATA[<u><a href="http://www.flashden.net" target="_blank">Html text !</a></u>]]></desc>
+	</media>
+
+	<media>
+		<image>pictures/03.jpg</image>
+		<desc><![CDATA[Image three !]]></desc>
+	</media>	
+	<media>
+		<image>pictures/04.jpg</image>
+		<desc><![CDATA[Image four !]]></desc>
+	</media>
+</medisaList>
+
+<!--
+autoPlay : accept 2 values, true or false.If it's set on true, there will be no arrows, and the slide will be automatic.
+
+timer : in autoPlay mode : time between each slide in second.
+
+image : location of the media. Supported formats are jpg, png, gif and swf.
+The media should be 460 wide, and 230 height.
+
+
+desc : a short description of the media, html supported*.
+
+
+
+
+
+*Put some html in your texts :
+
+
+You can use html text with CDATA.
+
+How does it work ?
+
+<title><![CDATA[ your html text...]]></title>
+
+Instead of simply type your description, you have to add these tag when opening : <![CDATA[ and these tag when closing ]]>
+
+Between those two tags you can use html balises.
+
+Examples of HTML Tags :
+
+change the color of the text :
+
+<font color="#FF0000">your text</font>
+#FF0000 is the hexadecimal value for Red
+
+
+make a link :
+
+<a href="http://www.flashden.net" target="_blank">Your link text</a>
+
+
+jump a line : <br>
+
+underline text : <u>you underline text</u>
+-->

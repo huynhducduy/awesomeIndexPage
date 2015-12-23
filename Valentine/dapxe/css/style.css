@@ -1,0 +1,80 @@
+body{
+background: #317E96;
+}
+
+article#cloud{
+	background: url(../images/cloud.png) repeat-x;
+	height: 100%;
+	z-index: 2;
+}
+article#cloud>p{
+    font-family: 'Open Sa;ns', sans-serif;
+	font-size: 60px;
+	font-weight: bold;
+	padding-top: 60px;
+	z-index: 3;
+	text-shadow:-2px 3px 12px #000000;
+	text-align:center
+}
+article#content{
+	position: absolute;
+	z-index: 1;
+	width: 100%;
+	height: auto;
+	top: 60%;
+	color: #6abdc5;
+	text-align: right;
+	text-transform: uppercase;
+}
+
+article#content h1{
+	font-size: 100px;
+	margin-right: 50px;
+	text-shadow:2px 2px 0 #FFF;
+}
+
+article#content h2{
+	font-size: 40px;
+	font-weight: normal;
+	margin-right: 50px;
+	text-shadow:1px 1px 0 #FFF;
+}
+article#content h3 a{
+	color: #6abdc5;
+	font-size: 15px;
+	text-transform: none;
+	text-shadow:1px 1px 0 #FFF;
+	margin-right: 50px;
+	text-decoration: none;
+}
+footer{
+	background: url(../images/city.png) repeat-x top;
+	width: 100%;
+	height: 535px;
+	position: absolute;
+	bottom: 0px;
+	overflow: hidden;
+	z-index: 1;
+}
+#duong{
+background: #342a2a;
+height: 206px;
+width: 100%;
+position: absolute;
+bottom:0px;
+z-index: 3;
+}
+#duong p{
+font-family: 'Open Sa;ns', sans-serif;
+padding:20px;
+text-align:right;
+color:#fff;
+line-height:20px;
+}
+#dapxe{
+z-index: 4;
+position: absolute;
+bottom:-0px;
+margin:0 auto;
+width: 1300px;
+}

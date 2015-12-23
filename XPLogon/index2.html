@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+<head> 
+<title>Welcome to [G]et[F]unny...</title> 
+<meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+<meta http-equiv="refresh" content="3; url=/html5" /> 
+<style> 
+@charset "utf-8";
+body{
+background:#5a7edc scroll center 100%;
+overflow:none;
+margin:0;
+padding:0;
+}
+.top{
+background:#00309C;
+height:90px;
+width:100%;
+position:fixed;
+top:0;
+}
+.bottom{
+background:#00309C;
+height:90px;
+width:100%;
+position:fixed;
+bottom:0;
+}
+.light{
+background:url(light.png) no-repeat top;
+width:255px;
+height:210px;
+position:fixed;
+top:90px;
+}
+.welcome{
+margin-top:31%;
+margin-left:55%;
+}
+</style> 
+<script type="text/javascript"> 
+document.onselectstart=new Function("return false");
+function ds(e){return false;}
+function ra(){return true;}
+document.onmousedown=ds;
+document.onclick=ra;
+document.oncontextmenu=function(){return false};</script>
+<script> 
+var txt="Welcome to [G]et[F]unny..."; 
+var espera=205; 
+var refresco=null; 
+function rotulo_title() { 
+document.title=txt; 
+txt=txt.substring(1,txt.length)+txt.charAt(0); 
+refresco=setTimeout("rotulo_title()",espera); 
+} 
+rotulo_title(); 
+</script>
+ 
+</head> 
+<body> <div class="top"></div> <div class="light"></div> 
+<img src="welcome.png" class="welcome" border="0" alt="" /> <div class="bottom"></div> 
+</body> 
+</html>

@@ -1,0 +1,5 @@
+28/05/2009
+
+- swfAddress issue corrected in safari and Google Chrome
+
+- down arrow doesn't appear if there's less than 3 links at least
