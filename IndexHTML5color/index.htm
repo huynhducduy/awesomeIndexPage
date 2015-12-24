@@ -1,0 +1,87 @@
+
+<!DOCTYPE html> 
+<html lang="en"> 
+  <head> 
+<script language="javascript">
+if (window.Event) 
+document.captureEvents(Event.MOUSEUP); 
+
+function nocontextmenu() 
+{ 
+event.cancelBubble = true 
+event.returnValue = false; 
+
+return false; 
+} 
+
+function norightclick(e) 
+{ 
+if (window.Event) 
+{ 
+if (e.which == 2 || e.which == 3) 
+return false; 
+} 
+else 
+if (event.button == 2 || event.button == 3) 
+{ 
+event.cancelBubble = true 
+event.returnValue = false; 
+return false; 
+} 
+
+} 
+if (document.layers) { 
+document.captureEvents(Event.MOUSEDOWN); 
+} 
+document.oncontextmenu = nocontextmenu; 
+document.onmousedown = norightclick; 
+document.onmouseup = norightclick; 
+
+
+function disableselect(e){
+return false
+}
+
+function reEnable(){
+return true
+}
+
+
+document.onselectstart=new Function ("return false")
+
+
+if (window.sidebar){
+document.onmousedown=disableselect
+document.onclick=reEnable
+}
+</script>
+  
+  
+    <meta charset=utf-8> 
+    <title>..::Firewall::..</title> 
+	<meta name="description" content="HTML5/canvas demo, 500 particles to play around with." /> 
+	<meta name="keywords" content="html5,canvas,javascript,particles,interactive,velocity,programming,flash" /> 
+    <script type="text/javascript" src="liquid-particles.js"></script> 
+	<link rel="stylesheet" type="text/css" href="experiment-pages.css" /> 
+  </head> 
+  <body> 
+	<div id="outer"> 
+		<div id="canvasContainer"> 
+			<canvas id="mainCanvas" width="1000" height="560"></canvas> 
+			<div id="output"></div> 
+		</div> 
+	</div> 
+	
+<script type="text/javascript"> 
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script> 
+<script type="text/javascript"> 
+try {
+var pageTracker = _gat._getTracker("UA-11054609-1");
+pageTracker._trackPageview();
+} catch(err) {}
+</script>	
+	
+  </body> 
+</html>
