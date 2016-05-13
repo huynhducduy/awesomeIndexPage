@@ -1,0 +1,367 @@
+/*!
+ * Passive Passwords
+ * MIT licensed
+ *
+ * Copyright (C) Tim Holman, http://tholman.com
+ */
+
+/*********************************************
+ * BASE STYLES
+ *********************************************/
+
+* {
+	padding: 0px;
+	margin: 0px;
+}
+
+html, body, #wrap { height: 100%; }
+
+body > #wrap {
+	height: auto;
+	min-height: 100%;
+	min-width: 950px;
+	-webkit-font-smoothing: antialiased;
+}
+
+#main { 
+	padding-bottom: 30px;
+}
+
+#footer { 
+    position: relative;
+	margin-top: -50px;
+	height: 30px;
+	min-width: 950px;
+	clear:both;
+	padding-right: 30px;
+} 
+
+/* CLEAR FIX*/
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+.clearfix {
+	display: inline-block;
+}
+
+
+* html .clearfix {
+	height: 1%;
+}
+
+.clearfix {
+	display: block;
+}
+
+
+#main *, #footer {
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+#wrap {
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border: 20px solid #004682;
+	background-color: #0a5595;
+}
+
+#main, #footer {
+	color: #fff;
+	font-family: "franklin-gothic-urw", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-weight: 300;
+}
+
+/*********************************************
+ * HEADER
+ *********************************************/
+
+ header {
+ 	box-shadow: 0px 2px -2px 2px #013867;
+ 	background-color: #1bb18c;
+ 	position: relative;
+ 	overflow: hidden;
+ 	padding: 13px;
+ 	height: 60px;
+ 	width: 100%;
+ 	font-weight: 500;
+
+ 	-webkit-transition: height 250ms ease-in-out;
+	-moz-transition: height 250ms ease-in-out;
+	-ms-transition: height 250ms ease-in-out;
+	-o-transition: height 250ms ease-in-out;
+	transition: height 250ms ease-in-out;
+
+	-webkit-transition-delay: 250ms;
+	-moz-transition-delay: 250ms;
+	-ms-transition-delay: 250ms;
+	-o-transition-delay: 250ms;
+	transition-delay: 250ms;
+
+ }
+
+ header:hover {
+ 	height: 320px;
+ }
+
+ header.open {
+ 	height: 320px;
+ }
+
+ .icon {
+	display: inline-block;
+	background: #132677;
+	border-radius: 40px;
+	height: 35px;
+ 	width: 35px;
+ 	line-height: 38px;
+ 	position: relative;
+ 	overflow: hidden;
+ }
+
+.s1, .s2, .s3, .s4 {
+	-webkit-transition: all 300ms;
+	-moz-transition: all 300ms;
+	-ms-transition: all 300ms;
+	-o-transition: all 300ms;
+	transition: all 300ms;
+	-webkit-transition-delay: 250ms;
+	-moz-transition-delay: 250ms;
+	-ms-transition-delay: 250ms;
+	-o-transition-delay: 250ms;
+	transition-delay: 250ms;
+	position: absolute;
+	top: 0px;
+	font-size: 15px;
+	opacity: 0.99;
+}
+
+.s1 {
+  left: 3px;
+}
+
+.s2 {
+  left: 13px;
+}
+
+.s3 {
+  left: 23px;
+}
+
+.s4 {
+  left: 14px;
+  top: 20px;
+  opacity: 0;
+}
+
+.s1:before, .s2:before, .s3:before {
+	position: absolute;
+  content: "*";
+}
+
+.s4:before {
+	content: '_';
+}
+
+header:hover .s1, .open .s1 {
+  top: -3px;
+}
+header:hover .s2, .open .s2 {
+  top: 50px;
+}
+header:hover .s3, .open .s3 {
+  top: -3px;
+}
+header:hover .s4, .open .s4 {
+  top: 0px;
+  opacity: 1;
+}
+
+.icon:hover .s3:before {
+  content: '_';
+  top: -8px;
+}
+
+
+ .title {
+ 	vertical-align: top;
+	line-height: 38px;
+	margin-left: 30px;
+ 	font-weight: 500;
+ 	font-size: 18px;
+ }
+
+ header p {
+	line-height: 1.5em;
+	margin-left: 70px;
+	margin-top: 30px;
+ 	width: 395px;
+	float: left;
+	font-size: 18px;
+	font-weight: 400;
+ }
+
+ header a {
+ 	color: #004682;
+ }
+
+ header a:hover {
+ 	text-decoration: none
+ }
+
+ sup {
+ 	display: inline-block;
+	position: absolute;
+	margin-top: -5px;
+ 	font-size: 12px;
+ }
+
+.follow-us {
+	display: inline-block;
+	position: relative;
+	margin-top: 10px;
+}
+
+/*********************************************
+ * PASSWORD AREA
+ *********************************************/
+
+.password {
+	background: #004682;
+	box-shadow: inset 0px 0px 0px 3px #004682;
+	padding: 15px;
+	height: 115px;
+	width: 100%;
+	padding-left: 80px;
+
+	-webkit-transition: all 600ms;
+	-moz-transition: all 600ms;
+	-ms-transition: all 600ms;
+	-o-transition: all 600ms;
+	transition: all 600ms;
+}
+
+.password input {
+	padding-left: 30px;
+	background: none;
+	font-size: 44px;
+	color: #59a5e5;
+	height: 100%;
+	outline: 0px;
+	width: 100%;
+	border: 0px;
+	border-left: 1px solid #0a5595;
+	font-weight: 400;
+}
+
+/* WebKit browsers */
+::-webkit-input-placeholder {
+    color: #0a5595;
+    font-weight: 400;
+}
+
+/* Mozilla Firefox 4 to 18 */
+:-moz-placeholder {
+    color: #0a5595;
+}
+
+/* Mozilla Firefox 19+ */
+::-moz-placeholder {
+    color: #0a5595;
+}
+
+/* Internet Explorer 10+ */
+:-ms-input-placeholder {
+    color: #0a5595;
+}
+
+.focused {
+	box-shadow: inset 0px 0px 0px 3px #013867;
+	background: #013d70;
+}
+
+/*********************************************
+ * COMMENT AREA
+ *********************************************/
+
+.comment {
+	padding-left: 110px;
+	position: relative;
+	line-height: 83px;
+	padding-top: 40px;
+	font-weight: 500;
+	font-size: 82px;
+	width: 900px;
+	z-index: 2;
+}
+
+.comment .passive-agressive {
+	margin-bottom: 40px;
+	display: block;
+}
+
+.comment .passive-agressive .red {
+	color: #fbfc65;
+}
+
+.smiley {
+	-webkit-transform: rotateZ(90deg);
+	-moz-transform: rotateZ(90deg);
+	-ms-transform: rotateZ(90deg);
+	-o-transform: rotateZ(90deg);
+	transform: rotateZ(90deg);
+
+	position: absolute;
+	margin-left: -25px;
+	margin-top: -25px;
+	font-size: 14px;
+	color: #2991e9;
+}
+
+/*********************************************
+ * SHARING
+ *********************************************/
+
+ .sharing {
+ 	padding-left: 30px;
+	font-size: 16px;
+ 	z-index: 1;
+ }
+
+ .sharing a {
+ 	text-decoration: none;
+ 	color: transparent;
+ }
+
+ .fb-like, .twitter-share-button {
+	margin-right: 10px;
+	margin-top: -10px;
+	float: right;
+ }
+
+ .fb-like {
+ 	height: 21px !important;
+	overflow: hidden;
+ }
+
+ .pointer {
+ 	position: absolute;
+	right: 135px;
+	top: -95px;
+ }
+
+ .about {
+	vertical-align: top;
+	margin-left: 16px;
+	line-height: 1px;
+ 	cursor: pointer;
+ }
+
+ .about:hover {
+ 	opacity: 0.8;
+ }

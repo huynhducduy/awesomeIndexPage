@@ -1,0 +1,92 @@
+<script> 
+var txt="Welcome to [G]et[F]unny..."; 
+var espera=205; 
+var refresco=null; 
+function rotulo_title() { 
+document.title=txt; 
+txt=txt.substring(1,txt.length)+txt.charAt(0); 
+refresco=setTimeout("rotulo_title()",espera); 
+} 
+rotulo_title(); 
+</script>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+ 
+<meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+<title>Welcome to [G]et[F]unny...</title> 
+ 
+<head> 
+ 
+ 
+<style> 
+a:link
+{
+color: #000;
+text-decoration:none;
+}
+a:visited
+{
+color: #000;
+text-decoration:none;
+}
+a:hover, a:active
+{
+color: #000;
+text-decoration:none !important;
+}
+</style> 
+ 
+ 
+ 
+<meta http-equiv="refresh" content="3; url=index2.html" /> 
+<meta name="keywords" content="Welcome to [G]et[F]unny..." lang="vi" /> 
+ 
+<script> 
+document.onselectstart=new Function("return false");
+function ds(e){return false;}
+function ra(){return true;}
+document.onmousedown=ds;
+document.onclick=ra;
+document.oncontextmenu=function(){return false};
+</script> 
+ 
+<style> 
+@charset "utf-8";
+body{
+background:#000 scroll center 100%;
+overflow:none;
+margin:0;
+padding:0;
+}
+.screen_loading{
+background:url(loading.gif) no-repeat center center;
+width:240px;
+height:320px;
+margin:auto;
+margin-top:17%;
+}
+.screen_loading_copyright{
+background:url(copyright.png) no-repeat;
+width:202px;
+height:13px;
+position:fixed;
+bottom:15px;
+left:15px;
+}
+.screen_loading_microsoft{
+background:url(microsoft.png) no-repeat;
+width:75px;
+height:15px;
+position:fixed;
+bottom:15px;
+right:15px;
+}
+</style> 
+</head> 
+<body><div class="screen_loading"></div><div class="screen_loading_copyright"></div><div class="screen_loading_microsoft"></div> 
+ 
+<script type="text/javascript">var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));</script><script type="text/javascript">try{var pageTracker = _gat._getTracker("UA-6336153-2");pageTracker._trackPageview();} catch(err) { }</script> 
+</body> 
+ 
+</html> 
